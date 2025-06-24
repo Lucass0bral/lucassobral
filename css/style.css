@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700;800;900&family=Poppins:wght@400;500;700&display=swap');
+
+@media (max-width:1200px) and (max-height:600px) and (orientation: landscape){
+  .wrapper{
+    display:none;
+  }
+
+  body{
+    background-color: #fff;
+  }
+
+  .landscape{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landscape span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+    color: #0e0e0e;
+    font-size: 1.4rem;
+    margin: 40px;
+  }
+
+  .landscape img{
+    margin: 20px auto 0px auto;
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+
+/* loading*/
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: #0e0e0e;
+  animation: loader 2s infinite ease;
+  margin: 0px 5px 0px 5px;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+/*Fim do loading*/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto; 
+}
+
+h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 3.5rem;
+    width: min-content;
+    line-height: 60px;
+  }
+
+h2{
+    font-family: 'Jost', sans-serif; 
+    font-weight: 800;
+    color: #0e0e0e;
+    font-size: 1.8rem;
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #0e0e0e;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/* Header*/
+
+.header{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #0e0e0e;
+}
+
+.subtitulo{
+    width: min-content;
+}
+
+.subtitulo span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+}
+ 
+ /* Sobremim */
+ 
+.sobremim{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #fff;
+}
+ 
+.sobremim h2{
+   margin-bottom: 40px;
+}
+ 
+.sobremim p{
+   padding: 0px;
+   margin: 0px 20px 30px 20px;
+}
+ 
+.sobremim ul{
+  margin-right: 20px;
+}
+
+.sobremim li{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #0e0e0e;
+  text-align: justify;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+ /*Portfolio*/
+ 
+.portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0e0e0e;
+}
+
+.portfolio h2{
+  color: #fff;
+}
+
+.sites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio img{
+  margin: 50px 0px 0px 0px;
+}
+ 
+ /*Contato*/
+ 
+.contato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+ 
+#my-form{
+  margin-top: 20px;
+  width: 240px;
+}
+
+.form-group{
+  margin: 10px 0px 10px 0px;
+}
+ 
+.form-control{
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1.5px solid #0e0e0e;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0rem;
+  color:#0e0e0e;
+  padding: .375rem .75rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  width: 214px;
+}
+
+.form-control:focus {
+  color: #0e0e0e;
+  background-color: #fff;
+  border-color: #0e0e0e;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #808080;
+}
+
+label{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; 
+  font-size: 0.8rem;
+  color: #0e0e0e;
+}
+ 
+ .nome, .email,.correctemail, .subject, .msg{
+   display: none;
+}
+ 
+.nomeform, .emailform, .subjectform, .msgform{
+  border-color:#0e0e0e;
+}
+ 
+.nomeinvalido, .emailinvalido, .subjectinvalido, .msginvalido{
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; 
+  color:#B50000;
+  display: block;
+  font-size: 0.8rem;
+}
+ 
+.correctemail{
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; 
+  color:#B50000;
+  display: none;
+}
+
+
+#my-form-status{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; 
+  font-size: 0.8rem;
+  margin: 15px 0px 0px 0px;
+  width: 240px;
+}
+ 
+.botao{
+  text-align: center;
+}
+
+.btn{
+  margin-top: 5px;
+  width: 90px;
+  height: 45px;
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; 
+  font-size: 1.125em;
+  line-height: 22px;
+  text-align: center;
+  border: transparent;
+  border-radius: 0rem;
+}
+ 
+.btn:hover{
+  border-radius: 0rem;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+/*Footer*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0e0e0e;
+}
+
+.link-info{
+  margin-bottom: 50px;
+  width: min-content;
+}
+
+.link-info span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; 
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+  
+.footer ul{
+  padding-left: 0px;
+}
+ 
+.links{
+  text-align: center;
+}
+
+.links li{
+  list-style: none;
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+ 
+.links img{
+  width: 60px;
+  height: 60px;
+}
+
+/* Dispositivos medium (tablet com 768px ou mais)*/ 
+@media (min-width: 360px) and (min-height:720px) { 
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+   font-size: 1.15rem;
+}
+
+/*Header*/
+
+.subtitulo span {
+    font-size: 1.5rem;
+}
+
+/*Sobremim*/
+
+.sobremim ul{
+    padding: 0px 0px 0px 60px;
+    margin: 0px 40px 0px 0px;
+}
+
+ .sobremim li {
+    font-size: 1.15rem;
+}
+
+/*Portfolio*/
+
+/*Contato*/
+
+#my-form {
+    width: 310px;
+}
+
+.form-control{
+    width: 284px;
+}
+
+label{
+    font-size: 1rem;
+}
+
+.nomeinvalido, .emailinvalido, .subjectinvalido, .msginvalido {
+    font-size: 1rem;
+}
+
+#my-form-status{
+  margin: 20px 0px 0px 0px;
+  width: 310px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+/*Footer*/
+
+}
+
+/* Dispositivos medium (tablet com 768px ou mais)*/ 
+@media (min-width: 768px){ 
+
+h1 {
+    font-size: 8rem;
+    width: min-content;
+    line-height: 125px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/*Header*/
+
+/*Sobremim*/
+
+.sobremim ul{
+  padding: 0px 0px 0px 60px;
+  margin: 0px 40px 0px 0px;
+}
+
+.sobremim li {
+  font-size: 1rem;
+}
+
+/*Portfolio*/
+
+.sites {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.portfolio img{
+  margin: 50px 20px 0px 20px;
+}
+
+/*Contato*/
+
+/*
+.formulario {
+  height: auto;
+}
+*/
+
+.form-group {
+  width: auto;
+}
+
+.form-control {
+  width: 702px;
+}
+
+label{
+  font-size: 1rem;
+}
+
+#my-form {
+  width: 728px;
+}
+
+.nomeinvalido, .emailinvalido, .subjectinvalido, .msginvalido {
+  font-size: 0.8rem;
+}
+
+#my-form-status{
+  width: 728px;
+  font-size: 1rem;
+}
+  
+/*Footer*/
+
+.link-info{
+  width: auto;
+  margin: 0px 50px 50px 50px;
+}
+
+.link-info span {
+  font-size: 2.8rem;;
+}
+
+}
+
+/* Dispositivos large (desktop com 992px ou mais)*/
+@media (min-width: 992px){ 
+
+/*Header*/
+
+h1 {
+  font-size: 7rem;
+  width: max-content;
+  margin-left: -10px;
+}
+
+/*Sobremim*/
+
+.sobremim p{
+  padding: 0px;
+  margin: 0px 40px 30px 40px;
+}
+
+.sobremim ul {
+  padding: 0px 0px 0px 100px;
+  margin: 0px 80px 0px 0px;
+}
+
+/*Portfolio*/
+
+.portfolio img {
+  margin: 50px 40px 0px 40px;
+}
+
+/*Contato*/
+  
+form{
+  margin-top:40px;
+}
+
+.form-group{
+  margin: 10px 0px 10px 0px;
+  width: 728px;
+}
+
+.nomeinvalido, .emailinvalido, .subjectinvalido, .msginvalido {
+  font-size: 1rem;
+}
+
+.btn{
+  margin-top: 20px;
+}
+ 
+/*Footer*/
+
+.link-info {
+  width: auto;
+}
+
+.link-info span {
+  font-size: 3.75rem;
+  text-align: justify;
+  margin: auto;
+}
+  
+}
+
+/* Dispositivos X-large (desktop com 1200px ou mais)*/
+@media (min-width: 1200px){
+
+/*Header*/
+
+h1 {
+  font-size: 9rem;
+}
+
+.subtitulo{
+  display: inline;
+}
+
+.subtitulo span{
+  padding-right: 50px;
+}
+
+/*Sobremim*/
+
+/*Portfolio*/
+ 
+/*Footer*/
+
+.link-info {
+  width: 80vw;
+}
+
+.link-info span {
+  font-size: 5.1rem;
+}
+
+.links img {
+  width: 60px;
+  height: 60px;
+}
+
+}
+
+
